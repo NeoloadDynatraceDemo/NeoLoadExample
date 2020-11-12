@@ -1,0 +1,13 @@
+# Project description file
+
+project.name=konakart
+project.version=8.1
+project.original.version=6.6
+product.name=NeoLoad
+product.original.name=NeoLoad
+product.version=7.5.0
+product.original.version=7.0.2
+project.id=5e38d801-2d6a-4b46-993a-8a7f9a23b739
+project.config.path=team
+project.config.storage=XML_MULTI
+team.server.enabled=false

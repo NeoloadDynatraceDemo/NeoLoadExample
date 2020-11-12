@@ -1,0 +1,899 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Performance Testing Report</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="leftnavigation">
+<div class="divHeader">NeoLoad Test Report</div>
+<div class="menu_wrapper">
+<div class="item">
+<a href="./summary.html">Summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.resultssummary">Results summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.statisticssummary">Statistics Summary</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.hotspots">Hot spots</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.errors">Errors</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.alerts">Alerts</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.summary.all">General statistics</a>
+</div>
+<div class="subitem">
+<a href="./summary.html#report.summary.transactions">Transaction statistics</a>
+</div>
+<div class="item">
+<a href="./settings.html">Execution context</a>
+</div>
+<div class="item">
+<a href="./servers.html">Servers</a>
+</div>
+<div class="item">
+<a href="./populations.html">Populations</a>
+</div>
+<div class="item">
+<a href="./virtual-users.html">User Paths</a>
+</div>
+<div class="item">
+<a href="./transactions.html">Transactions</a>
+</div>
+<div class="item">
+<a href="./pages.html">Pages</a>
+</div>
+<div class="item">
+<a href="./medias.html">Media Contents</a>
+</div>
+<div class="item">
+<a href="./pushmessages.html">Push messages</a>
+</div>
+<div class="item">
+<a href="./monitors.html">Monitors</a>
+</div>
+<div class="item">
+<a href="./sla-profiles-details.html">SLA per SLA Profile</a>
+</div>
+<div class="item">
+<a href="./sla-details-results-per-vu.html">SLA per User Path</a>
+</div>
+<div class="item">
+<a href="./scenario_konakart_load_webinar.html">Scenario</a>
+</div>
+<div class="title">Main graphs</div>
+<div class="item">
+<a href="./Main graphs_pages.average.html">Average page response time</a>
+</div>
+<div class="item">
+<a href="./Main graphs_requests.average.html">Average request response time</a>
+</div>
+<div class="item">
+<a href="./Main graphs_transactions.average.html">Average response time (Transactions)</a>
+</div>
+<div class="item">
+<a href="./Main graphs_hits.html">Requests per second</a>
+</div>
+<div class="item">
+<a href="./Main graphs_errors.html">Errors</a>
+</div>
+<div class="item">
+<a href="./Main graphs_throughput.html">Throughput</a>
+</div>
+<div class="item">
+<a href="./Main graphs_pages.average.vu.html">Response time against load</a>
+</div>
+<div class="item">
+<a href="./Main graphs_percentile.html">Distribution of Transaction Durations</a>
+</div>
+<div class="item">
+<a href="./Main graphs_alerts.html">Top 10 First Alerts</a>
+</div>
+</div>
+<div style="float: right;">
+<img style="margin-top: 10px; margin-bottom: 0px; margin-right: 4px" src="./images/logo_neotys.png"></div>
+</div>
+<div id="content">
+<div class="divHeader">Monitors</div>
+<p class="mediumtitle">Controller</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Performance Counters</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Avg</th><th width="5%">Max</th><th width="5%">Med</th><th width="5%">Avg-90%</th><th width="5%">Std Dev</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">16.5</td><td class="line2right bordered">30</td><td class="line2right bordered">15</td><td class="line2right bordered">16.7</td><td class="line2right bordered">9.91</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Throughput</span></td><td class="line1right bordered">0</td><td class="line1right bordered">3.09</td><td class="line1right bordered">20.4</td><td class="line1right bordered">2.27</td><td class="line1right bordered">2.76</td><td class="line1right bordered">3.2</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Alerts</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Critical Alerts</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Warning Alerts</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/CPU Load</span></td><td class="line1right bordered">27</td><td class="line1right bordered">59.3</td><td class="line1right bordered">100</td><td class="line1right bordered">58</td><td class="line1right bordered">58.9</td><td class="line1right bordered">14</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Memory Used</span></td><td class="line2right bordered">4</td><td class="line2right bordered">13.8</td><td class="line2right bordered">25</td><td class="line2right bordered">14</td><td class="line2right bordered">13.7</td><td class="line2right bordered">5.65</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Thread Count</span></td><td class="line1right bordered">595</td><td class="line1right bordered">629.7</td><td class="line1right bordered">639</td><td class="line1right bordered">628</td><td class="line1right bordered">629.4</td><td class="line1right bordered">4</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Connected</span></td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Total Disconnections</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Total Reconnections</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Network/Segments sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">449.4</td><td class="line1right bordered">12,528</td><td class="line1right bordered">0</td><td class="line1right bordered">277.2</td><td class="line1right bordered">1,033</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Network/Segments retransmitted/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Network/wlan0 (Microsoft Wi-Fi Direct Virtual Adapter)/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Network/wlan0 (Microsoft Wi-Fi Direct Virtual Adapter)/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Network/eth6 (TAP-Windows Adapter V9)/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Network/eth6 (TAP-Windows Adapter V9)/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Network/eth4 (Bluetooth Device (Personal Area Network))/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Network/eth4 (Bluetooth Device (Personal Area Network))/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Network/eth3 (Intel(R) Ethernet Connection (2) I219-LM)/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Network/eth3 (Intel(R) Ethernet Connection (2) I219-LM)/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Network/eth0 (HMA TAP-Windows Adapter V9)/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Network/eth0 (HMA TAP-Windows Adapter V9)/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Network/wlan2 (Intel(R) Dual Band Wireless-AC 8260)/Megabits received/sec.</span></td><td class="line1right bordered">0.073</td><td class="line1right bordered">4.1</td><td class="line1right bordered">151</td><td class="line1right bordered">2.8</td><td class="line1right bordered">3.32</td><td class="line1right bordered">8.22</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Network/wlan2 (Intel(R) Dual Band Wireless-AC 8260)/Megabits sent/sec.</span></td><td class="line2right bordered">0.242</td><td class="line2right bordered">4.19</td><td class="line2right bordered">12</td><td class="line2right bordered">4.4</td><td class="line2right bordered">4.16</td><td class="line2right bordered">2.38</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/NeoLoad Web/Megabits received/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0.003</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/NeoLoad Web/Megabits sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.018</td><td class="line2right bordered">0.12</td><td class="line2right bordered">0.01</td><td class="line2right bordered">0.016</td><td class="line2right bordered">0.018</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Default zone/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">16.5</td><td class="line1right bordered">30</td><td class="line1right bordered">15</td><td class="line1right bordered">16.6</td><td class="line1right bordered">9.93</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Default zone/Retail/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">16.5</td><td class="line2right bordered">30</td><td class="line2right bordered">15</td><td class="line2right bordered">16.7</td><td class="line2right bordered">9.92</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller/Default zone/Retail/Browser/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">13.2</td><td class="line1right bordered">24</td><td class="line1right bordered">12</td><td class="line1right bordered">13.3</td><td class="line1right bordered">7.93</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller/Default zone/Retail/Buyer/User Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">3.3</td><td class="line2right bordered">6</td><td class="line2right bordered">3</td><td class="line2right bordered">3.33</td><td class="line2right bordered">1.98</td>
+</tr>
+</table>
+</div>
+</div>
+<p class="mediumtitle">Controller-Host/Dynatrace</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Performance Counters</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Avg</th><th width="5%">Max</th><th width="5%">Med</th><th width="5%">Avg-90%</th><th width="5%">Std Dev</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...ainers/Devicemapper data space available</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal.../containers/Devicemapper data space used</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...s/Devicemapper meta-data space available</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...ainers/Devicemapper meta-data space used</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/AIX Entitlement used</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/AIX Entitlement configured</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/CPU idle</span></td><td class="line2right bordered">96.2</td><td class="line2right bordered">97.4</td><td class="line2right bordered">98.6</td><td class="line2right bordered">97.2</td><td class="line2right bordered">97.2</td><td class="line2right bordered">0.818</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/CPU I/O wait</span></td><td class="line1right bordered">0.004</td><td class="line1right bordered">0.059</td><td class="line1right bordered">0.488</td><td class="line1right bordered">0.013</td><td class="line1right bordered">0.012</td><td class="line1right bordered">0.151</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/System load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.105</td><td class="line2right bordered">0.317</td><td class="line2right bordered">0.103</td><td class="line2right bordered">0.082</td><td class="line2right bordered">0.102</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/System load15m</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0.015</td><td class="line1right bordered">0.042</td><td class="line1right bordered">0.01</td><td class="line1right bordered">0.012</td><td class="line1right bordered">0.017</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/System load5m</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.054</td><td class="line2right bordered">0.133</td><td class="line2right bordered">0.047</td><td class="line2right bordered">0.045</td><td class="line2right bordered">0.053</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/CPU other</span></td><td class="line1right bordered">0.051</td><td class="line1right bordered">0.167</td><td class="line1right bordered">0.266</td><td class="line1right bordered">0.181</td><td class="line1right bordered">0.156</td><td class="line1right bordered">0.064</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/AIX Physical consumed</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/CPU steal</span></td><td class="line1right bordered">0.067</td><td class="line1right bordered">0.116</td><td class="line1right bordered">0.16</td><td class="line1right bordered">0.117</td><td class="line1right bordered">0.111</td><td class="line1right bordered">0.031</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/CPU system</span></td><td class="line2right bordered">0.296</td><td class="line2right bordered">0.436</td><td class="line2right bordered">0.62</td><td class="line2right bordered">0.419</td><td class="line2right bordered">0.416</td><td class="line2right bordered">0.104</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/CPU usage %</span></td><td class="line1right bordered">1.39</td><td class="line1right bordered">2.62</td><td class="line1right bordered">3.84</td><td class="line1right bordered">2.81</td><td class="line1right bordered">2.49</td><td class="line1right bordered">0.818</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/CPU user</span></td><td class="line2right bordered">0.945</td><td class="line2right bordered">1.84</td><td class="line2right bordered">2.78</td><td class="line2right bordered">1.85</td><td class="line2right bordered">1.74</td><td class="line2right bordered">0.617</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/msu/MSU average</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/msu/MSU capacity</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/ziip/zIIP eligible</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/cpu/ziip/zIIP usage</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/disk/Disk available</span></td><td class="line1right bordered">42,661,289,984</td><td class="line1right bordered">42,661,381,188</td><td class="line1right bordered">42,661,464,747</td><td class="line1right bordered">42,661,380,096</td><td class="line1right bordered">42,661,371,904</td><td class="line1right bordered">61,603</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...tin/host/disk/Disk read bytes per second</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...in/host/disk/Disk write bytes per second</span></td><td class="line1right bordered">16,768</td><td class="line1right bordered">27,577</td><td class="line1right bordered">36,018</td><td class="line1right bordered">27,671</td><td class="line1right bordered">26,639</td><td class="line1right bordered">6,387</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/disk/Disk available %</span></td><td class="line2right bordered">82.1</td><td class="line2right bordered">82.1</td><td class="line2right bordered">82.1</td><td class="line2right bordered">82.1</td><td class="line2right bordered">82.1</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/disk/Inodes available %</span></td><td class="line1right bordered">95.3</td><td class="line1right bordered">95.3</td><td class="line1right bordered">95.3</td><td class="line1right bordered">95.3</td><td class="line1right bordered">95.3</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/disk/Inodes total</span></td><td class="line2right bordered">6,400,000</td><td class="line2right bordered">6,400,000</td><td class="line2right bordered">6,400,000</td><td class="line2right bordered">6,400,000</td><td class="line2right bordered">6,400,000</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...tin/host/disk/Disk average queue length </span></td><td class="line1right bordered">0</td><td class="line1right bordered">0.002</td><td class="line1right bordered">0.019</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0.006</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...ost/disk/Disk read operations per second</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/disk/Disk read time </span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/disk/Disk used</span></td><td class="line2right bordered">9,298,567,851</td><td class="line2right bordered">9,298,652,228</td><td class="line2right bordered">9,298,742,613</td><td class="line2right bordered">9,298,655,232</td><td class="line2right bordered">9,298,641,920</td><td class="line2right bordered">61,847</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/disk/Disk used %</span></td><td class="line1right bordered">17.9</td><td class="line1right bordered">17.9</td><td class="line1right bordered">17.9</td><td class="line1right bordered">17.9</td><td class="line1right bordered">17.9</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/disk/Disk utilization time </span></td><td class="line2right bordered">0.425</td><td class="line2right bordered">0.79</td><td class="line2right bordered">1.14</td><td class="line2right bordered">0.809</td><td class="line2right bordered">0.751</td><td class="line2right bordered">0.24</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...st/disk/Disk write operations per second</span></td><td class="line1right bordered">1.94</td><td class="line1right bordered">3.17</td><td class="line1right bordered">4.08</td><td class="line1right bordered">3.15</td><td class="line1right bordered">3.07</td><td class="line1right bordered">0.75</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/disk/Disk write time </span></td><td class="line2right bordered">0.874</td><td class="line2right bordered">1.44</td><td class="line2right bordered">6.02</td><td class="line2right bordered">0.905</td><td class="line2right bordered">0.926</td><td class="line2right bordered">1.61</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...ost/disk/throughput/Disk throughput read</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...st/disk/throughput/Disk throughput write</span></td><td class="line2right bordered">134,147</td><td class="line2right bordered">220,615</td><td class="line2right bordered">288,147</td><td class="line2right bordered">221,364</td><td class="line2right bordered">213,111</td><td class="line2right bordered">51,099</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/mem/Memory used</span></td><td class="line1right bordered">5,708,952,917</td><td class="line1right bordered">5,811,951,479</td><td class="line1right bordered">5,862,290,773</td><td class="line1right bordered">5,832,693,760</td><td class="line1right bordered">5,806,358,016</td><td class="line1right bordered">52,172,079</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/mem/avail/Memory available</span></td><td class="line2right bordered">10,927,479,467</td><td class="line2right bordered">10,977,818,761</td><td class="line2right bordered">11,080,817,323</td><td class="line2right bordered">10,957,076,480</td><td class="line2right bordered">10,966,374,400</td><td class="line2right bordered">52,172,079</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal/builtin/host/mem/avail/Memory available %</span></td><td class="line1right bordered">65.1</td><td class="line1right bordered">65.4</td><td class="line1right bordered">66</td><td class="line1right bordered">65.3</td><td class="line1right bordered">65.3</td><td class="line1right bordered">0.311</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...in/host/mem/avail/Page faults per second</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...Network interface bytes received on host</span></td><td class="line1right bordered">17,197</td><td class="line1right bordered">33,374</td><td class="line1right bordered">52,385</td><td class="line1right bordered">32,803</td><td class="line1right bordered">31,262</td><td class="line1right bordered">12,086</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...nic/Network interface bytes sent on host</span></td><td class="line2right bordered">248,348</td><td class="line2right bordered">513,341</td><td class="line2right bordered">782,383</td><td class="line2right bordered">512,490</td><td class="line2right bordered">483,448</td><td class="line2right bordered">185,400</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...twork interface packets received on host</span></td><td class="line1right bordered">71.3</td><td class="line1right bordered">128.3</td><td class="line1right bordered">230.4</td><td class="line1right bordered">112.1</td><td class="line1right bordered">117</td><td class="line1right bordered">52.5</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...s/Network interface packets sent on host</span></td><td class="line2right bordered">104.8</td><td class="line2right bordered">210.8</td><td class="line2right bordered">327.8</td><td class="line2right bordered">206.4</td><td class="line2right bordered">197.8</td><td class="line2right bordered">76.2</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...n/host/osService/OS Service availability</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...kernelThreads/AIX Kernel threads blocked</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...hreads/AIX Kernel threads I/O event wait</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...eads/AIX Kernel threads I/O message wait</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...kernelThreads/AIX Kernel threads running</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...tin/service/Number of calls to databases</span></td><td class="line2right bordered">2,561</td><td class="line2right bordered">5,507</td><td class="line2right bordered">8,453</td><td class="line2right bordered">5,408</td><td class="line2right bordered">5,179</td><td class="line2right bordered">1,985</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/Number of calls to databases</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/Number of calls to databases</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...tin/service/Time spent in database calls</span></td><td class="line1right bordered">654,795</td><td class="line1right bordered">1,665,492</td><td class="line1right bordered">3,609,020</td><td class="line1right bordered">1,671,397</td><td class="line1right bordered">1,449,545</td><td class="line1right bordered">853,207</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/Time spent in database calls</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/Time spent in database calls</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konakart)/builtin/service/IO time</span></td><td class="line2right bordered">526,634</td><td class="line2right bordered">1,420,422</td><td class="line2right bordered">3,354,398</td><td class="line2right bordered">1,290,758</td><td class="line2right bordered">1,205,536</td><td class="line2right bordered">798,627</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/IO time</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/IO time</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konakart)/builtin/service/Lock time</span></td><td class="line1right bordered">0</td><td class="line1right bordered">307,357</td><td class="line1right bordered">1,861,970</td><td class="line1right bordered">124,659</td><td class="line1right bordered">134,622</td><td class="line1right bordered">567,348</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/Lock time</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/Lock time</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...ervice/Number of calls to other services</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/Number of calls to other services</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/Number of calls to other services</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...ce/Time spent in calls to other services</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/Time spent in calls to other services</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/Time spent in calls to other services</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konakart)/builtin/service/Total processing time</span></td><td class="line2right bordered">2,241</td><td class="line2right bordered">3,130</td><td class="line2right bordered">6,214</td><td class="line2right bordered">2,736</td><td class="line2right bordered">2,788</td><td class="line2right bordered">1,158</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/Total processing time</span></td><td class="line1right bordered">147.3</td><td class="line1right bordered">170.4</td><td class="line1right bordered">191.2</td><td class="line1right bordered">170.5</td><td class="line1right bordered">168.1</td><td class="line1right bordered">13.5</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/Total processing time</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konakart)/builtin/service/Wait time</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/Wait time</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/Wait time</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...rors/client/Number of client side errors</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/errors/client/Number of client side errors</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/errors/client/Number of client side errors</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...lient/Failure rate (client side  errors)</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/errors/client/Failure rate (client side  errors)</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/errors/client/Failure rate (client side  errors)</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...ber of calls without  client side errors</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/errors...ber of calls without  client side errors</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/errors/client/Number of calls without  client side errors</span></td><td class="line2right bordered">2,561</td><td class="line2right bordered">5,507</td><td class="line2right bordered">8,453</td><td class="line2right bordered">5,408</td><td class="line2right bordered">5,179</td><td class="line2right bordered">1,985</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak.../errors/fivexx/Number of HTTP 5xx errors</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0.2</td><td class="line1right bordered">1</td><td class="line1right bordered">0</td><td class="line1right bordered">0.111</td><td class="line1right bordered">0.422</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/errors/fivexx/Number of HTTP 5xx errors</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/errors/fivexx/Number of HTTP 5xx errors</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...s/fivexx/Failure rate (HTTP 5xx  errors)</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.008</td><td class="line2right bordered">0.048</td><td class="line2right bordered">0</td><td class="line2right bordered">0.004</td><td class="line2right bordered">0.018</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/errors/fivexx/Failure rate (HTTP 5xx  errors)</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/errors/fivexx/Failure rate (HTTP 5xx  errors)</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...Number of calls without  HTTP 5xx errors</span></td><td class="line1right bordered">866</td><td class="line1right bordered">1,990</td><td class="line1right bordered">3,125</td><td class="line1right bordered">2,100</td><td class="line1right bordered">1,864</td><td class="line1right bordered">767.6</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/errors...Number of calls without  HTTP 5xx errors</span></td><td class="line2right bordered">9</td><td class="line2right bordered">31.1</td><td class="line2right bordered">55</td><td class="line2right bordered">32</td><td class="line2right bordered">28.4</td><td class="line2right bordered">13.8</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/errors/fivexx/Number of calls without  HTTP 5xx errors</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak.../errors/fourxx/Number of HTTP 4xx errors</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/errors/fourxx/Number of HTTP 4xx errors</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/errors/fourxx/Number of HTTP 4xx errors</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...s/fourxx/Failure rate (HTTP 4xx  errors)</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/errors/fourxx/Failure rate (HTTP 4xx  errors)</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/errors/fourxx/Failure rate (HTTP 4xx  errors)</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...Number of calls without  HTTP 4xx errors</span></td><td class="line2right bordered">866</td><td class="line2right bordered">1,990</td><td class="line2right bordered">3,125</td><td class="line2right bordered">2,100</td><td class="line2right bordered">1,864</td><td class="line2right bordered">767.8</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/errors...Number of calls without  HTTP 4xx errors</span></td><td class="line1right bordered">9</td><td class="line1right bordered">31.1</td><td class="line1right bordered">55</td><td class="line1right bordered">32</td><td class="line1right bordered">28.4</td><td class="line1right bordered">13.8</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/errors/fourxx/Number of calls without  HTTP 4xx errors</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...rors/server/Number of server side errors</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0.2</td><td class="line1right bordered">1</td><td class="line1right bordered">0</td><td class="line1right bordered">0.111</td><td class="line1right bordered">0.422</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/errors/server/Number of server side errors</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/errors/server/Number of server side errors</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...erver/Failure rate (server side  errors)</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.008</td><td class="line2right bordered">0.048</td><td class="line2right bordered">0</td><td class="line2right bordered">0.004</td><td class="line2right bordered">0.018</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/errors/server/Failure rate (server side  errors)</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/errors/server/Failure rate (server side  errors)</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...ber of calls without  server side errors</span></td><td class="line1right bordered">866</td><td class="line1right bordered">1,990</td><td class="line1right bordered">3,125</td><td class="line1right bordered">2,100</td><td class="line1right bordered">1,864</td><td class="line1right bordered">767.6</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/errors...ber of calls without  server side errors</span></td><td class="line2right bordered">9</td><td class="line2right bordered">31.1</td><td class="line2right bordered">55</td><td class="line2right bordered">32</td><td class="line2right bordered">28.4</td><td class="line2right bordered">13.8</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/errors/server/Number of calls without  server side errors</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...ervice/errors/total/Number of any errors</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.2</td><td class="line2right bordered">1</td><td class="line2right bordered">0</td><td class="line2right bordered">0.111</td><td class="line2right bordered">0.422</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/errors/total/Number of any errors</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/errors/total/Number of any errors</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak.../errors/total/Failure rate (any  errors)</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0.008</td><td class="line1right bordered">0.048</td><td class="line1right bordered">0</td><td class="line1right bordered">0.004</td><td class="line1right bordered">0.018</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/errors/total/Failure rate (any  errors)</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/errors/total/Failure rate (any  errors)</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...otal/Number of calls without  any errors</span></td><td class="line2right bordered">866</td><td class="line2right bordered">1,990</td><td class="line2right bordered">3,125</td><td class="line2right bordered">2,100</td><td class="line2right bordered">1,864</td><td class="line2right bordered">767.6</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/errors/total/Number of calls without  any errors</span></td><td class="line1right bordered">9</td><td class="line1right bordered">31.1</td><td class="line1right bordered">55</td><td class="line1right bordered">32</td><td class="line1right bordered">28.4</td><td class="line1right bordered">13.8</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/errors/total/Number of calls without  any errors</span></td><td class="line2right bordered">2,561</td><td class="line2right bordered">5,507</td><td class="line2right bordered">8,453</td><td class="line2right bordered">5,408</td><td class="line2right bordered">5,179</td><td class="line2right bordered">1,985</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...rvice/response/Client side response time</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/response/Client side response time</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/response/Client side response time</span></td><td class="line1right bordered">250.1</td><td class="line1right bordered">307.9</td><td class="line1right bordered">729.1</td><td class="line1right bordered">258.8</td><td class="line1right bordered">261.1</td><td class="line1right bordered">148.3</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...rvice/response/Server side response time</span></td><td class="line2right bordered">2,241</td><td class="line2right bordered">3,130</td><td class="line2right bordered">6,214</td><td class="line2right bordered">2,736</td><td class="line2right bordered">2,788</td><td class="line2right bordered">1,158</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/response/Server side response time</span></td><td class="line1right bordered">147.3</td><td class="line1right bordered">170.4</td><td class="line1right bordered">191.2</td><td class="line1right bordered">170.5</td><td class="line1right bordered">168.1</td><td class="line1right bordered">13.5</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/response/Server side response time</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konakart)/builtin/service/response/Response time</span></td><td class="line1right bordered">2,241</td><td class="line1right bordered">3,130</td><td class="line1right bordered">6,214</td><td class="line1right bordered">2,736</td><td class="line1right bordered">2,788</td><td class="line1right bordered">1,158</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/response/Response time</span></td><td class="line2right bordered">147.3</td><td class="line2right bordered">170.4</td><td class="line2right bordered">191.2</td><td class="line2right bordered">170.5</td><td class="line2right bordered">168.1</td><td class="line2right bordered">13.5</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/response/Response time</span></td><td class="line1right bordered">250.1</td><td class="line1right bordered">307.9</td><td class="line1right bordered">729.1</td><td class="line1right bordered">258.8</td><td class="line1right bordered">261.1</td><td class="line1right bordered">148.3</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...service/dbconnections/Failed connections</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/dbconnections/Failed connections</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/dbconnections/Failed connections</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...ce/dbconnections/Connection failure rate</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/dbconnections/Connection failure rate</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/dbconnections/Connection failure rate</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...ice/dbconnections/Successful connections</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/dbconnections/Successful connections</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/dbconnections/Successful connections</span></td><td class="line2right bordered">85</td><td class="line2right bordered">236.6</td><td class="line2right bordered">354</td><td class="line2right bordered">244</td><td class="line2right bordered">223.6</td><td class="line2right bordered">95.6</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...ce/dbconnections/Connection success rate</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/dbconnections/Connection success rate</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/dbconnections/Connection success rate</span></td><td class="line1right bordered">100</td><td class="line1right bordered">100</td><td class="line1right bordered">100</td><td class="line1right bordered">100</td><td class="line1right bordered">100</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...bconnections/Total number of connections</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/dbconnections/Total number of connections</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/dbconnections/Total number of connections</span></td><td class="line2right bordered">85</td><td class="line2right bordered">236.6</td><td class="line2right bordered">354</td><td class="line2right bordered">244</td><td class="line2right bordered">223.6</td><td class="line2right bordered">95.6</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konakart)/builtin/service/cpu/CPU time</span></td><td class="line1right bordered">1,507</td><td class="line1right bordered">1,741</td><td class="line1right bordered">2,004</td><td class="line1right bordered">1,720</td><td class="line1right bordered">1,711</td><td class="line1right bordered">196.8</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/cpu/CPU time</span></td><td class="line2right bordered">147.3</td><td class="line2right bordered">169</td><td class="line2right bordered">184.7</td><td class="line2right bordered">170.3</td><td class="line2right bordered">167.3</td><td class="line2right bordered">12.4</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/cpu/CPU time</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konakart)/builtin/service/cpu/Service CPU time</span></td><td class="line2right bordered">1,660,611</td><td class="line2right bordered">3,387,288</td><td class="line2right bordered">5,096,400</td><td class="line2right bordered">3,381,511</td><td class="line2right bordered">3,197,387</td><td class="line2right bordered">1,177,283</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/cpu/Service CPU time</span></td><td class="line1right bordered">1,602</td><td class="line1right bordered">5,260</td><td class="line1right bordered">8,904</td><td class="line1right bordered">5,360</td><td class="line1right bordered">4,855</td><td class="line1right bordered">2,373</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/cpu/Service CPU time</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...vice/requestCount/Request count - client</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/requestCount/Request count - client</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/requestCount/Request count - client</span></td><td class="line1right bordered">2,561</td><td class="line1right bordered">5,507</td><td class="line1right bordered">8,453</td><td class="line1right bordered">5,408</td><td class="line1right bordered">5,179</td><td class="line1right bordered">1,985</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...vice/requestCount/Request count - server</span></td><td class="line2right bordered">866</td><td class="line2right bordered">1,990</td><td class="line2right bordered">3,125</td><td class="line2right bordered">2,100</td><td class="line2right bordered">1,864</td><td class="line2right bordered">767.8</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/requestCount/Request count - server</span></td><td class="line1right bordered">9</td><td class="line1right bordered">31.1</td><td class="line1right bordered">55</td><td class="line1right bordered">32</td><td class="line1right bordered">28.4</td><td class="line1right bordered">13.8</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/requestCount/Request count - server</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...iltin/service/requestCount/Request count</span></td><td class="line1right bordered">866</td><td class="line1right bordered">1,990</td><td class="line1right bordered">3,125</td><td class="line1right bordered">2,100</td><td class="line1right bordered">1,864</td><td class="line1right bordered">767.8</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/requestCount/Request count</span></td><td class="line2right bordered">9</td><td class="line2right bordered">31.1</td><td class="line2right bordered">55</td><td class="line2right bordered">32</td><td class="line2right bordered">28.4</td><td class="line2right bordered">13.8</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/requestCount/Request count</span></td><td class="line1right bordered">2,561</td><td class="line1right bordered">5,507</td><td class="line1right bordered">8,453</td><td class="line1right bordered">5,408</td><td class="line1right bordered">5,179</td><td class="line1right bordered">1,985</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/KonaKart Store-Front Application (/konak...cesses/server/Success rate (server side)</span></td><td class="line2right bordered">100</td><td class="line2right bordered">100</td><td class="line2right bordered">100</td><td class="line2right bordered">100</td><td class="line2right bordered">100</td><td class="line2right bordered">0.018</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Welcome to Tomcat/builtin/service/successes/server/Success rate (server side)</span></td><td class="line1right bordered">100</td><td class="line1right bordered">100</td><td class="line1right bordered">100</td><td class="line1right bordered">100</td><td class="line1right bordered">100</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/service/successes/server/Success rate (server side)</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Postgres/builtin/tech/generic/Process count per process group</span></td><td class="line1right bordered">1</td><td class="line1right bordered">1</td><td class="line1right bordered">1</td><td class="line1right bordered">1</td><td class="line1right bordered">1</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/tech/generic/Process count per process group</span></td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">1</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Postgres/builtin/tech/generic/cpu/Process group total CPU time during GC suspensions</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/tech/generic/cpu/Process group total CPU time during GC suspensions</span></td><td class="line2right bordered">64,800</td><td class="line2right bordered">179,196</td><td class="line2right bordered">313,441</td><td class="line2right bordered">173,960</td><td class="line2right bordered">164,280</td><td class="line2right bordered">83,865</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Postgres/builtin/tech/generic/cpu/Process group total CPU time</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/tech/generic/cpu/Process group total CPU time</span></td><td class="line2right bordered">2,328,474</td><td class="line2right bordered">4,970,617</td><td class="line2right bordered">7,135,858</td><td class="line2right bordered">4,983,229</td><td class="line2right bordered">4,730,034</td><td class="line2right bordered">1,699,213</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...mission base received per second on host</span></td><td class="line1right bordered">18.5</td><td class="line1right bordered">40.9</td><td class="line1right bordered">59.7</td><td class="line1right bordered">40.9</td><td class="line1right bordered">38.8</td><td class="line1right bordered">14.9</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...ransmission base sent per second on host</span></td><td class="line2right bordered">88.8</td><td class="line2right bordered">196.1</td><td class="line2right bordered">294.2</td><td class="line2right bordered">190.8</td><td class="line2right bordered">185.2</td><td class="line2right bordered">73.1</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...tted packets received per second on host</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0.033</td><td class="line1right bordered">0.183</td><td class="line1right bordered">0</td><td class="line1right bordered">0.017</td><td class="line1right bordered">0.058</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...nsmitted packets sent per second on host</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0.653</td><td class="line2right bordered">1.6</td><td class="line2right bordered">0.517</td><td class="line2right bordered">0.548</td><td class="line2right bordered">0.541</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal.../New session received per second on host</span></td><td class="line1right bordered">1.25</td><td class="line1right bordered">3.02</td><td class="line1right bordered">4.63</td><td class="line1right bordered">2.94</td><td class="line1right bordered">2.84</td><td class="line1right bordered">1.17</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...ession reset received per second on host</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/ip-10-0-0-247.eu-west-1.compute.internal...sion timeout received per second on host</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Postgres/builtin/tech/jvm/spark/Alive workers</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/tech/jvm/spark/Alive workers</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Postgres/builtin/tech/jvm/spark/Master apps</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/tech/jvm/spark/Master apps</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Postgres/builtin/tech/jvm/spark/Waiting apps</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/tech/jvm/spark/Waiting apps</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Postgres/builtin/tech/jvm/spark/Master workers</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/tech/jvm/spark/Master workers</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Postgres/builtin/tech/jvm/spark/driver/Active jobs</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/tech/jvm/spark/driver/Active jobs</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Postgres/builtin/tech/jvm/spark/driver/Total jobs</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/tech/jvm/spark/driver/Total jobs</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Postgres/builtin/tech/jvm/spark/driver/Processing time - count</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/tech/jvm/spark/driver/Processing time - count</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Postgres/builtin/tech/jvm/spark/driver/Failed stages</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/tech/jvm/spark/driver/Failed stages</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Postgres/builtin/tech/jvm/spark/driver/Processing time - mean</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/tech/jvm/spark/driver/Processing time - mean</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Postgres/builtin/tech/jvm/spark/driver/Processing time - one minute rate</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/tech/jvm/spark/driver/Processing time - one minute rate</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Postgres/builtin/tech/jvm/spark/driver/Running stages</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/tech/jvm/spark/driver/Running stages</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/Postgres/builtin/tech/jvm/spark/driver/Waiting stages</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">Controller-Host/Dynatrace/konakart/builtin/tech/jvm/spark/driver/Waiting stages</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+</table>
+</div>
+</div>
+<p class="mediumtitle">LG localhost:7100</p>
+<div style="width: 100%; height: 20px;" id="report.monitors">
+<div style="float:left" class="h1" id="statistics_summary_title">Performance Counters</div>
+</div>
+<div class="wrapper" align="center">
+<div align="center">
+<table class="monitors_template">
+<th width="36%"></th><th width="5%">Min</th><th width="5%">Avg</th><th width="5%">Max</th><th width="5%">Med</th><th width="5%">Avg-90%</th><th width="5%">Std Dev</th>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/CPU Load</span></td><td class="line2right bordered">0</td><td class="line2right bordered">59.2</td><td class="line2right bordered">100</td><td class="line2right bordered">58</td><td class="line2right bordered">58.9</td><td class="line2right bordered">14.2</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Memory Used</span></td><td class="line1right bordered">0</td><td class="line1right bordered">7.26</td><td class="line1right bordered">15</td><td class="line1right bordered">7</td><td class="line1right bordered">7.23</td><td class="line1right bordered">3.44</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Throughput</span></td><td class="line2right bordered">0</td><td class="line2right bordered">3.07</td><td class="line2right bordered">20.4</td><td class="line2right bordered">2.25</td><td class="line2right bordered">2.74</td><td class="line2right bordered">3.18</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/User Load</span></td><td class="line1right bordered">0</td><td class="line1right bordered">16.5</td><td class="line1right bordered">30</td><td class="line1right bordered">15</td><td class="line1right bordered">16.7</td><td class="line1right bordered">9.89</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Thread Count</span></td><td class="line2right bordered">0</td><td class="line2right bordered">77.7</td><td class="line2right bordered">93</td><td class="line2right bordered">77</td><td class="line2right bordered">78</td><td class="line2right bordered">10.99</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Http client/Thread Pool used</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0.111</td><td class="line1right bordered">0.14</td><td class="line1right bordered">0.11</td><td class="line1right bordered">0.111</td><td class="line1right bordered">0.009</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Http client/Task Pool used</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0.017</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0.001</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Controller Connection/Disconnections</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Controller Connection/Reconnections</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Controller Connection/Ping Duration (ms)</span></td><td class="line1right bordered">1</td><td class="line1right bordered">2.6</td><td class="line1right bordered">6</td><td class="line1right bordered">2</td><td class="line1right bordered">2.5</td><td class="line1right bordered">1.25</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Network/Segments sent/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">417.6</td><td class="line2right bordered">13,986</td><td class="line2right bordered">0</td><td class="line2right bordered">222.7</td><td class="line2right bordered">1,157</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Network/Segments retransmitted/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0.664</td><td class="line1right bordered">236.6</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">10.87</td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Network/wlan0 (Microsoft Wi-Fi Direct Virtual Adapter)/Megabits received/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Network/wlan0 (Microsoft Wi-Fi Direct Virtual Adapter)/Megabits sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Network/eth6 (TAP-Windows Adapter V9)/Megabits received/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Network/eth6 (TAP-Windows Adapter V9)/Megabits sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Network/eth4 (Bluetooth Device (Personal Area Network))/Megabits received/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Network/eth4 (Bluetooth Device (Personal Area Network))/Megabits sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Network/eth3 (Intel(R) Ethernet Connection (2) I219-LM)/Megabits received/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Network/eth3 (Intel(R) Ethernet Connection (2) I219-LM)/Megabits sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Network/eth0 (HMA TAP-Windows Adapter V9)/Megabits received/sec.</span></td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered">0</td><td class="line2right bordered"> - </td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Network/eth0 (HMA TAP-Windows Adapter V9)/Megabits sent/sec.</span></td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered">0</td><td class="line1right bordered"> - </td>
+</tr>
+<tr>
+<td class="line2left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Network/wlan2 (Intel(R) Dual Band Wireless-AC 8260)/Megabits received/sec.</span></td><td class="line2right bordered">0.072</td><td class="line2right bordered">4.1</td><td class="line2right bordered">155.6</td><td class="line2right bordered">2.81</td><td class="line2right bordered">3.32</td><td class="line2right bordered">8.3</td>
+</tr>
+<tr>
+<td class="line1left bordered"><span class="tablelabel left-block-margin">LG localhost:7100/Network/wlan2 (Intel(R) Dual Band Wireless-AC 8260)/Megabits sent/sec.</span></td><td class="line1right bordered">0.182</td><td class="line1right bordered">4.18</td><td class="line1right bordered">11.7</td><td class="line1right bordered">4.39</td><td class="line1right bordered">4.15</td><td class="line1right bordered">2.38</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>
